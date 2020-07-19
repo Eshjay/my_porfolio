@@ -1,0 +1,107 @@
+HTML CARD
+<div class="container">
+<div class="flip-card">
+  <div class="inner">
+    <div class="front">
+      <img src="https://media-exp1.licdn.com/dms/image/C5603AQHMQiaP1dj8XA/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=vOFC-earwrZYr8KW8OfOduA4qDjjMhpP9GIXNNbicDk" alt="Daily Dev Tips" />
+    </div>
+    <div class="back">
+      <h1>Chris Bongers</h1>
+      <p>Writer, Developer</p>
+      <p>Yes, I do love alpacas 🦙</p>
+    </div>
+  </div>
+</div>
+</div>
+
+CSS Horizontal flip
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    .front,
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .front {
+      background-color: #bbb;
+    }
+    .back {
+      background-color: teal;
+      color: white;
+      transform: rotateX(180deg);
+    }
+  }
+  &:hover {
+    .inner {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+CSS vertical flip!
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    .front,
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .front {
+      background-color: #bbb;
+    }
+    .back {
+      background-color: teal;
+      color: white;
+      transform: rotateY(180deg);
+    }
+  }
+  &:hover {
+    .inner {
+      transform: rotateY(180deg);
+    }
+  }
+}
