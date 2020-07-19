@@ -1,65 +1,318 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I will develop beautiful and outstanding website for your business and deliver within 7days" />
+	<meta name="keywords" content="Front-End Developer Website-developer Designer Software Progammer UI/UX SEO" />
+	<meta name="author" content="Olushola Abiodun" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.16.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.16.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.16.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.16.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.16.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <!-- https://fallacious-punishment.surge.sh/ -->
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Olushola Professional Front-End Developer | Lagos, Nigeria"/>
+	<meta property="og:image" content="https://res.cloudinary.com/dlqceb87c/image/upload/v1595032845/olushola.dev.png"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content="Olushola Abiodun Professional Web Developer Software Engineer"/>
+	<meta property="og:description" content="I will develop beautiful and outstanding website for your business and deliver within 7days"/>
+	<meta name="twitter:title" content="Olushola Professional Front-End Developer | Lagos, Nigeria" />
+	<meta name="twitter:image" content="https://res.cloudinary.com/dlqceb87c/image/upload/v1595032845/olushola.dev.png" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+    <title> Olushola Professional Front-End Developer | Lagos, Nigeria</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="./img/olushola.png">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hambuger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a> </li>
+                <li class="nav-item"><a href="#my-services" class="nav-link">My Services</a> </li>
+                <li class="nav-item"><a href="#about-me" class="nav-link">About me</a> </li>
+                <li class="nav-item"><a href="#my-work" class="nav-link">My Work</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- / Header -->
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section-title section-title-intro animate-box  fadeInLeft animated" data-animate-effect="fadeInLeft">
+            Bawo ni, I am <strong>Olushola Abiodun</strong>
+        </h1>
+        <p class="section-subtitle section-subtitle-intro animate-box fadeInRight animated"  data-animate-effect="fadeInRight">Front-End Dev</p>
+        <img src="./img/shola2.jpg" alt="a picture of Abiodun Olushola" class="intro-img animate-box bounceInDown animated" data-animate-effect="bounceInDown">
+    </section>
+    <!-- End of Introduction -->
+    <section class="my-services" id="my-services">
+        <h2 class="section-title section-title-services animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">What I do</h2>
+        <div class="services">
+            <div class="service service-text animate-box fadeInUp animated " data-animate-effect="fadeInUp">
+                    <h1><i class="fab fa-html5 service-brand"></i></h1>
+                    <h3>Web Design + Developement</h3>
+                    <p>I will design and develop 1 page website for small business</p>
+                    <p>I will create stylish mini-ecommerce website for mini-exporters</p>
+                    <p>I will help businesses get more customers and establish their online presence</p>
+            </div>
+            <div class="service service-text animate-box fadeInDown animated" data-animate-effect="fadeInDown">
+                <h1><i class="fa fa-cart-arrow-down service-brand"></i></h1>
+                <h3>E-Commerce</h3>
+                <p>I will design and develop an outstanding fast e-commerce website for your business and increase your sales accordingly</p>
+                <p>I will make your product rank higer on search engine and make customers to always come back to your store for their needs</p>
+            </div>
+            <div class="service service-text animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+                <h1><i class="fab fa-react service-brand"></i></h1>
+                <h3>ReactJs</h3>
+                <p>
+                    I will create incredible react web/mobile application for your products
+                    and services!
+                </p>
+                <p>
+                    Solid Knowlegde and experience in programming mobile first react applications
+                </p>
+            </div>
+        </div>
+        <a href="#my-work" class="btn animate-box bounceInDown animated" data-animate-effect="bounceInDown">My Work</a>
+    </section>
+
+
+    <!-- About me -->
+    <section class="about-me" id="about-me">
+        <h2 class="section-title section-title-about">Who I am ?</h2>
+        <p class="section-subtitle section-subtitle-about">My skills include 
+            <a href="" class="typewrite" data-period="2000" data-type='["JavaScript ", "Boostrap ", "ReactJS ","Wordpress", "SEO ", "Graphic Design "]'>
+                <span class="wrap"></span>
+            </a>
+        </p>
+
+        <div class="about-me-body">
+            <p>I have ability to solve complex problems, develop creative ideals, process and provide distinct solution.</p>
+            <p>I will translate designs to front-end code and determine developer requirements</p>
+            <p>I will build beautiful and outstanding website for your business and deliver within 7days</p>
+        </div>
+        <img src="./img/shola-lab.jpg" alt="abiodun olushola" class="about-me-img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="my-work">
+        <h2 class="section-title">What I'm up to...</h2>
+        <h4 class="section-subtitle-work">This is the list of my completed, current and upcoming projects</h4>
+        
+        <div class="portfolio">
+            <div class="flip-card">
+                <div class="inner">
+                  <div class="front">
+                    <img src="./img/project6.png" alt="Revaneous project details" style="width:auto;height:300px;" />
+                  </div>
+                  <div class="back">
+                    <h4>Ravenous</h4>
+                    <p>Tools used:</p>
+                    <ul class="tool-used">
+                        <li class="tool-item">
+                           <i class="fab fa-js-square"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-css3"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-yelp"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-react"></i>
+                        </li>
+                    </ul>
+                    <p>Status: <strong id="typing">completed</strong></p>
+                    <p><a class="btn2" href="#" target="_blank">See Demo</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="inner">
+                  <div class="front">
+                    <img src="./img/project2.png" alt="yep website project details" style="width:auto;height:300px;" />
+                  </div>
+                  <div class="back">
+                    <h4>Yep Website</h4>
+                    <p>Tools used:</p>
+                    <ul class="tool-used">
+                        <li class="tool-item">
+                           <i class="fab fa-js-square"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-html5"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-css3"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-bootstrap"></i>
+                        </li>
+                    </ul>
+                    <p>Status: <strong id="typing">In progress</strong></p>
+                    <!-- <p><a class="btn" href="#" target="_blank">See Demo</a></p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="inner">
+                  <div class="front">
+                    <img src="./img/Screenshot (1864).png" alt="Charitable youth project details" style="width:auto;height:300px;" />
+                  </div>
+                  <div class="back">
+                    <h4>Charitable Youth Website</h4>
+                    <p>Tools used:</p>
+                    <ul class="tool-used">
+                        <li class="tool-item">
+                           <i class="fab fa-wordpress"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-html5"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-css3"></i>
+                        </li>
+                    </ul>
+                    <p><strong>Status: </strong> completed</p>
+                    <p><a class="btn2" href="https://charitableyouth.org" target="_blank">Visit</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="inner">
+                  <div class="front">
+                    <img src="./img/project4.png" alt="Edulink speachworld project details" style="width:auto;height:300px;" />
+                  </div>
+                  <div class="back">
+                    <h4 style="margin-top: 20px;">Edulink Speechworld website</h4>
+                    <p>Tools used:</p>
+                    <ul class="tool-used">
+                        <li class="tool-item">
+                           <i class="fab fa-js-square"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-html5"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-css3"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-bootstrap"></i>
+                        </li>
+                    </ul>
+                    <p><strong>Status:</strong> Completed</p>
+                    <p><a class="btn2" href="https://edulinkspeechworld.com.ng" target="_blank">Visit</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="inner">
+                  <div class="front">
+                    <img src="./img/project5.png" alt="Daily Dev Tips" style="width:auto;height:300px;" />
+                  </div>
+                  <div class="back">
+                    <h4>Playest</h4>
+                    <p>Tools used:</p>
+                    <ul class="tool-used">
+                        <li class="tool-item">
+                           <i class="fab fa-js-square"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-spotify"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-css3"></i>
+                        </li>
+                        <li class="tool-item">
+                                <i class="fab fa-react"></i>
+                        </li>
+                    </ul>
+                    <p><strong>Status:</strong> In progress</p>
+                    <!-- <p><a class="btn" href="#" target="_blank">See Details</a></p> -->
+                  </div>
+                </div>
+              </div>
+            <!-- Portfolio item 1 -->
+            <!-- <div class="card">
+            <div style="background-image: url(./img/libolo\ poster-02.jpg); background-size: cover; background-blend-mode: multiply;" class="portfolio-item card__side card__side--front card__side--front-1">
+                <div class="card__description">1</div>
+                <img class="card__description" src="./img/libolo poster-02.jpg" alt="" class="portfolio-img">
+           
+            <div class="card__side card__side--back card__side--back-1">
+                <div class="card__description">
+                    <h3>Name:</h3>
+                    <p>Yep Website</p>
+                    <h3>Tools used:</h3>
+                    <div class="tool-bar">
+                        <ul>
+                            <li>G</li>
+                            <li>H</li>
+                            <li>C</li>
+                            <li>Js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div> -->
+            <!-- Portfolio item 1 -->
+            
+        </div>
+        <a href="https://wa.me/2348065667344" target="_blank" class="btn animate-box bounceInDown animated" data-animate-effect="bounceInDown">Contact me <i <i class="fab fa-whatsapp contact-icon"></i> </a>
+
+    </section>
+    <!-- Footer -->
+    <footer>
+        <a href="mailto:olushola.abiodun@gmail.com" class="footer-link">Olushola.abiodun@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list-item">
+                <a class="social-list-link" href="https://github.com/eshjay" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a> 
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="https://freecodecamp.org/" target="_blank">
+                    <i class="fab fa-free-code-camp"></i>
+                </a> 
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="https://twitter.com/holusholah" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a> 
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="https://linkedin.com/in/abiodun2050" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a> 
+            </li>
+        </ul>
+    </footer>
+
+
+<script src="./js/myscript.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.easing.1.3.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.16.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.16.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
 </html>
