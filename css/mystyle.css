@@ -65,6 +65,11 @@ strong {font-weight: var(--fw-bold);}
 }
 
 /* Button */
+button {
+    border-color: transparent;
+    font-weight: var(--fw-bold);
+}
+
 .btn{
     display: inline-block;
     margin-top: 2em;
@@ -111,6 +116,31 @@ strong {font-weight: var(--fw-bold);}
     outline-offset: 3px;
     background: var(--clr-dark);
     color: var(--clr-accent);
+}
+
+.btn3{
+    display: inline-block;
+    border-bottom: 1em;
+    margin-top: 0.25em;
+    padding: .15em .5em;
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+    /* border-radius: 15px; */
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing:  2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn3:hover {
+    transform: scale(1.1);
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
 }
 
 .nav-toggle{
@@ -488,6 +518,62 @@ button.nav-toggle{
       transform: translateY(300%);
   }
 
+
+  /* Modal Box Design */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+    visibility: hidden;
+    z-index: -10;
+  }
+  /* OPEN/CLOSE MODAL */
+  .open-modal {
+    visibility: visible;
+    z-index: 10;
+  }
+  .modal-container {
+    background: var(--clr-accent);
+    border-radius: 10px;
+    width: 90vw;
+    height: 90vh;
+    max-width: 620px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .modal-container p {
+      padding: 20px;
+      margin-bottom: auto;
+  }
+  .modal-container h3 {
+      padding-top: 15px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: red;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .close-btn:hover {
+    color: red;
+    transform: scale(1.3);
+  }
+  
+
+
 /* About me image */
 .about-me {
     max-width: 1000px;
@@ -541,7 +627,6 @@ button.nav-toggle{
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
 }
 
 .portfolio-item {
